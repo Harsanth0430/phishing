@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phishing Awareness Module</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand__logo" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2c5.523 0 10 3.134 10 7 0 2.88-2.37 5.39-5.83 6.45-.23 1.1-1.1 2.46-3.74 4.26-.31.22-.73.22-1.04 0-2.63-1.8-3.5-3.16-3.73-4.25C4.37 14.39 2 11.88 2 9c0-3.866 4.477-7 10-7Zm0 2C7.582 4 4 6.019 4 9c0 2.084 1.9 4.073 4.83 4.99.33.1.58.35.65.68.2.93.86 1.92 2.52 3.16 1.67-1.25 2.32-2.24 2.53-3.17.07-.33.32-.6.64-.69C18.1 13.073 20 11.084 20 9c0-2.981-3.582-5-8-5Zm0 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"></path>
+      </svg>
+      <span>Phishing Awareness</span>
+    </div>
+    <nav class="nav">
+      <a href="#intro">Intro</a>
+      <a href="#recognize">Recognize</a>
+      <a href="#social">Social Engineering</a>
+      <a href="#best-practices">Best Practices</a>
+      <a href="#examples">Examples</a>
+      <a href="#quizzes">Quizzes</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="intro" class="hero container">
+    <div class="hero__text">
+      <h1>Spot the Phish. Protect your data.</h1>
+      <p>
+        Learn how to identify phishing emails, fake websites, and social engineering tricks—
+        then practice with interactive quizzes. No installs. No JavaScript needed.
+      </p>
+      <ul class="hero__highlights">
+        <li>✅ Real-world red flags</li>
+        <li>✅ Browser-safe checks</li>
+        <li>✅ Quick do’s & don’ts</li>
+      </ul>
+    </div>
+    <div class="hero__art" aria-hidden="true">
+      <div class="lock"></div>
+      <div class="wave"></div>
+    </div>
+  </section>
+
+  <!-- Recognize phishing -->
+  <section id="recognize" class="container section">
+    <h2>How to recognize phishing emails & fake websites</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Sender & Header</h3>
+        <p><strong>Mismatch alert:</strong> The display name says “Bank Support” but the address is <code>bank.support@gmail.com</code>.</p>
+        <ul class="bullets">
+          <li>Hover to reveal full email address</li>
+          <li>Look for misspelled domains (e.g., <code>paypaI.com</code> with capital i)</li>
+          <li>Beware of “no-reply” used to block replies</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Links & URLs</h3>
+        <p>Always <em>hover before you click</em>. Check if the link points to the real domain.</p>
+        <ul class="bullets">
+          <li>Use HTTPS (lock icon) but don’t trust it alone</li>
+          <li>Watch for subdomain tricks: <code>bank.com.example.co</code></li>
+          <li>Short links? Expand with a trusted expander first</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Language & Tone</h3>
+        <p>Urgency, threats, or gifts push you to act fast.</p>
+        <ul class="bullets">
+          <li>“Your account will be closed in 1 hour”</li>
+          <li>“Confirm to claim a reward”</li>
+          <li>Typos and generic greetings (e.g., “Dear user”)</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Attachments</h3>
+        <p>Unexpected invoices, resumes, or password-protected files are classic traps.</p>
+        <ul class="bullets">
+          <li>Beware of <code>.html</code>, <code>.exe</code>, <code>.js</code>, or macro-enabled docs</li>
+          <li>Scan files with a reputable scanner before opening</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Website Footprints</h3>
+        <p>Fake pages often miss fundamentals.</p>
+        <ul class="bullets">
+          <li>Broken footer links / no privacy policy</li>
+          <li>Low-quality logos, stock images, or odd spacing</li>
+          <li>Login page appears before the main site</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Technical Checks</h3>
+        <p>For advanced users:</p>
+        <ul class="bullets">
+          <li>Check domain age with a WHOIS lookup</li>
+          <li>Use password managers: they won’t auto-fill on fake domains</li>
+          <li>View message headers for SPF/DKIM/DMARC results</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Social engineering -->
+  <section id="social" class="container section">
+    <h2>Social engineering tactics</h2>
+    <div class="grid grid--three">
+      <article class="tile">
+        <h3>Baiting</h3>
+        <p>Enticing offers (“free gift cards”) that lure clicks or downloads.</p>
+      </article>
+      <article class="tile">
+        <h3>Pretexting</h3>
+        <p>Fake scenarios (IT support, HR, bank) to make you share data.</p>
+      </article>
+      <article class="tile">
+        <h3>Quid Pro Quo</h3>
+        <p>“Do this & get that” exchanges that request credentials or access.</p>
+      </article>
+      <article class="tile">
+        <h3>Tailgating</h3>
+        <p>Following someone into a restricted space without a badge.</p>
+      </article>
+      <article class="tile">
+        <h3>Spear Phishing</h3>
+        <p>Personalized attacks using info from social media or leaks.</p>
+      </article>
+      <article class="tile">
+        <h3>Vishing/Smishing</h3>
+        <p>Voice/SMS phishing: urgent calls or texts with malicious links.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Best Practices -->
+  <section id="best-practices" class="container section">
+    <h2>Best practices to stay safe</h2>
+    <div class="do-dont">
+      <div class="panel panel--do">
+        <h3>Do</h3>
+        <ul>
+          <li>Verify sender identity via official channels</li>
+          <li>Use MFA (authenticator app or hardware key)</li>
+          <li>Report suspicious messages to your security team</li>
+          <li>Type URLs manually for sensitive logins</li>
+          <li>Keep software and browsers up to date</li>
+        </ul>
+      </div>
+      <div class="panel panel--dont">
+        <h3>Don’t</h3>
+        <ul>
+          <li>Reuse passwords across sites</li>
+          <li>Share OTPs, recovery codes, or MFA prompts</li>
+          <li>Download unexpected attachments</li>
+          <li>Plug unknown USB drives into work devices</li>
+          <li>Ignore browser/security warnings</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tip strip">
+      <strong>Tip:</strong> Password managers help detect fake sites by refusing to auto-fill on the wrong domain.
+    </div>
+  </section>
+
+  <!-- Real-world examples -->
+  <section id="examples" class="container section">
+    <h2>Real-world style examples</h2>
+    <details class="example">
+      <summary>“Bank account locked” email</summary>
+      <div class="example__body">
+        <p>Red flags: generic greeting, urgent deadline, link to <code>bank-secure-login.example.co</code>.</p>
+        <p>What to do: Don’t click. Visit your bank by typing the URL or using the official app.</p>
+      </div>
+    </details>
+    <details class="example">
+      <summary>“Invoice attached” from an unknown vendor</summary>
+      <div class="example__body">
+        <p>Attachment is <code>Invoice_Aug.html</code> (opens a fake login). Always verify with the requester first.</p>
+      </div>
+    </details>
+    <details class="example">
+      <summary>“CEO urgent gift cards” message</summary>
+      <div class="example__body">
+        <p>Common business email compromise ploy. Verify via a known phone number before acting.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- Quizzes (CSS-only interactivity) -->
+  <section id="quizzes" class="container section">
+    <h2>Interactive quizzes</h2>
+
+    <!-- Q1 -->
+    <article class="quiz card">
+      <h3>Q1. Which URL is safest for your bank?</h3>
+      <form class="quiz__form" aria-labelledby="q1">
+        <div class="quiz__options">
+          <label class="option">
+            <input type="radio" name="q1" />
+            <span>https://bank.secure-login.example.co</span>
+            <span class="feedback feedback--wrong">Not the bank’s real domain. Subdomain trick.</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q1" />
+            <span>http://mybank.com</span>
+            <span class="feedback feedback--wrong">No HTTPS. Avoid logging in.</span>
+          </label>
+          <label class="option correct">
+            <input type="radio" name="q1" />
+            <span>https://mybank.com</span>
+            <span class="feedback feedback--right">Correct! Direct domain with HTTPS.</span>
+          </label>
+        </div>
+      </form>
+    </article>
+
+    <!-- Q2 -->
+    <article class="quiz card">
+      <h3>Q2. An email demands payment in 30 minutes or your account closes. What should you do first?</h3>
+      <form class="quiz__form">
+        <div class="quiz__options">
+          <label class="option">
+            <input type="radio" name="q2" />
+            <span>Click the link and pay quickly</span>
+            <span class="feedback feedback--wrong">That’s exactly what the phisher wants.</span>
+          </label>
+          <label class="option correct">
+            <input type="radio" name="q2" />
+            <span>Independently verify via the official website/app</span>
+            <span class="feedback feedback--right">Correct. Use a known-good channel.</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q2" />
+            <span>Reply to the email and ask if it’s real</span>
+            <span class="feedback feedback--wrong">Replies go to the attacker. Don’t engage.</span>
+          </label>
+        </div>
+      </form>
+    </article>
+
+    <!-- Q3 -->
+    <article class="quiz card">
+      <h3>Q3. Which attachment type is the riskiest in a surprise email?</h3>
+      <form class="quiz__form">
+        <div class="quiz__options">
+          <label class="option correct">
+            <input type="radio" name="q3" />
+            <span>invoice.html</span>
+            <span class="feedback feedback--right">Correct. HTML can host credential traps.</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q3" />
+            <span>agenda.pdf</span>
+            <span class="feedback feedback--wrong">PDFs can be risky but less than HTML executables.</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q3" />
+            <span>photo.jpg</span>
+            <span class="feedback feedback--wrong">Typically lower risk vs. HTML/EXE (still be cautious).</span>
+          </label>
+        </div>
+      </form>
+    </article>
+
+    <!-- Score note -->
+    <p class="note">Note: This quiz gives instant feedback per question (no JavaScript or tracking).</p>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>Remember:</strong> When in doubt, don’t click—verify first.</p>
+      <p class="small">© 2025 Security Awareness Module</p>
+    </div>
+  </footer>
+</body>
+</html>
